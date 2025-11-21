@@ -1,0 +1,77 @@
+:root {
+  color-scheme: light dark;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #050505;
+  color: #f2f2f2;
+}
+
+body {
+  margin: 0;
+  line-height: 1.7;
+}
+
+a {
+  color: #4dabf7;
+}
+
+a:hover,
+a:focus-visible {
+  color: #74c0fc;
+}
+
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 64px 24px 96px;
+}
+
+.page__header {
+  margin-bottom: 48px;
+}
+
+.page__header h1 {
+  font-size: clamp(2.2rem, 4vw, 2.8rem);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.page__header p {
+  margin: 0 0 12px;
+  max-width: 640px;
+  color: #d6d6d6;
+}
+
+.page__source {
+  font-size: 0.95rem;
+}
+
+.page__transcript {
+  display: grid;
+  gap: 18px;
+}
+
+.page__transcript p {
+  margin: 0;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.24);
+  transition: border 0.2s ease, background 0.2s ease;
+}
+
+.page__transcript p:hover,
+.page__transcript p:focus-within {
+  border-color: rgba(125, 196, 255, 0.5);
+  background: rgba(125, 196, 255, 0.06);
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 48px 16px 72px;
+  }
+
+  .page__transcript {
+    gap: 14px;
+  }
+}
